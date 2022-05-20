@@ -1,0 +1,18 @@
+<header>Query to JSON converter</header>
+<p align="center">
+  This validates & converts a query to JSON.<br>
+  Sample query:<br>
+  ((A=2 && B=3) || (C=4 && D=5))
+</p>
+
+<div class="container">
+	<p>Enter query</p>
+	<input id="queryInput" type="text">
+  <br>
+	<button class="btn" (click)="submitQuery()">Submit</button>
+</div>
+
+<div class="container">
+  <p>Converted JSON</p>
+    {{convertedJson}}
+</div>
